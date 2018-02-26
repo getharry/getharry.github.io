@@ -1,0 +1,166 @@
+ 
+  body,
+  div,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  form,
+  input,
+  img,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  p {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0
+  }
+
+  li {
+    list-style: none
+  }
+
+  a {
+    text-decoration: none
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font: 400 14px/1.5 Microsoft YaHei, sans-serif
+  }
+
+  #app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @font-face {
+    font-family: "iconfont";
+    src: url("static/cv/fonts/iconfont.eot");
+    src: url("static/cv/fonts/iconfont.eot") format("embedded-opentype"), url("static/cv/fonts/iconfont.woff") format("woff"), url("static/cv/fonts/iconfont.ttf") format("truetype"), url("static/cv/fonts/iconfont.svg") format("svg")
+  }
+
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+
+  .iconfont:before {
+    vertical-align: middle
+  }
+
+  .iconfont:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+  }
+
+  .icon-mobile:before {
+    content: "\e6b2"
+  }
+
+  .icon-mianshi:before {
+    content: "\e65b"
+  }
+
+  .icon-zhandou:before {
+    content: "\e74f"
+  }
+
+  .icon-nodejs:before {
+    content: "\e989"
+  }
+
+  .icon-jquery-copy:before {
+    content: "\e600"
+  }
+
+  .icon-shouye:before {
+    content: "\e629"
+  }
+
+  .icon-hire:before {
+    content: "\e6fd"
+  }
+
+  .icon-oGDwRZJ01:before {
+    content: "\e633"
+  }
+
+  .icon-css:before {
+    content: "\e61f"
+  }
+
+  .icon-react:before {
+    content: "\e770"
+  }
+
+  .icon-inauguration:before {
+    content: "\e877"
+  }
+
+  .icon-daima:before {
+    content: "\e620"
+  }
+
+  .icon-qianjin:before {
+    content: "\e602"
+  }
+
+  .icon-github:before {
+    content: "\e601"
+  }
+
+  .icon-down:before {
+    content: "\e70f"
+  }
+
+  .icon-linkedin:before {
+    content: "\e6e2"
+  }
+
+  .wrap,
+  .container,
+  .column {
+    width: 100%;
+    height: 100%
+  }
+
+  .wrap {
+    overflow: hidden
+  }
+
+  .container {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+  }
+
+  .column {
+    overflow: hidden;
+    position: relative
+  }
+
+  #demo-canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+  }
+
+  
