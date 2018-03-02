@@ -19,6 +19,7 @@ vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过
 ### 实现Observer
 - 通过Object.defineProperty()来监听属性变动
 - 对需要observe的数据对象进行递归遍历，因为要包括子属性对象的属性，这样对某个对象的属性赋值的时候，就会触发setter，从而监听到数据变化。
+
 ```javascript
 function observe(data){
 	if(!data||typeof data !=='object'){
