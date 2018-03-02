@@ -77,7 +77,9 @@ export class MyComponent extends Vue {
   onPersonChanged(val: Person, oldVal: Person) { }
 }
 ```
+
 以上代码相当于：
+
 ```javascript
 const s = Symbol('baz')
 
