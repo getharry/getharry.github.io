@@ -38,7 +38,7 @@ vue 约定 public/index.html 作为入口模板会通过 html-webpack-plugin 插
 ## 对TypeScript的支持
 在 3.0 版本中，选择启用 TypeScript 语法后，vue 组件的书写格式有特定的规范。
 示例：
-```javasciprt
+```javascipt
 import { Component, Emit, Inject, Model, Prop, Provide, Vue, Watch } from 'vue-property-decorator'
 
 const s = Symbol('baz')
@@ -77,9 +77,7 @@ export class MyComponent extends Vue {
   onPersonChanged(val: Person, oldVal: Person) { }
 }
 ```
-
 以上代码相当于：
-
 ```javascript
 const s = Symbol('baz')
 
