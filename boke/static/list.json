@@ -1,4 +1,4 @@
 {
-	"left": ["关于冻结对象","vuecli3新特性","Sublime3快捷汇总.md"],
-	"right": ["NBA每日对抗请求分析","happy2018","在Vue中使用TS"]
+	"left": ["关于冻结对象","vuecli3新特性","Sublime3快捷汇总","Vue双向数据绑定的思考","JavaScript中Map和ForEach的区别"],
+	"right": ["NBA每日对抗请求分析","happy2018","在Vue中使用TS","温习Vuex"]
 }
