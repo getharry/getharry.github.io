@@ -5,7 +5,7 @@
 - Getter 从state派生出一些状态
 - Mutation 更改store的状态的唯一方法
 - Action 提交的是mutation，异步
-- Module 当应用变得非常复杂时，store 对象就有可能变得相当臃肿。Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块
+- Module 当应用变得非常复杂时，store 对象就有可能变得相当臃肿。Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块  
 实例：
 
 ```javascript

@@ -28,6 +28,6 @@ let arr2 = arr.map(num => num * 2).filter(num => num > 5);
 ```
 
 ### 总结
-> 能用forEach()做到的，map()同样可以。反过来也是如此
-> map()会分配内存空间存储新数组并返回，forEach()不会返回数据
+> 能用forEach()做到的，map()同样可以。反过来也是如此  
+> map()会分配内存空间存储新数组并返回，forEach()不会返回数据  
 > forEach()允许callback更改原始数组的元素。map()返回新的数组
