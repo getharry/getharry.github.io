@@ -1,5 +1,6 @@
 ### Chrome清理缓存刷新
+有时候打开控制台比较麻烦，这有几个快捷键比较好用。  
+- 清除Google浏览器缓存的快捷键 **Ctrl+Shift+Del**
+- 重新加载当前网页而不使用缓存内容 **Ctrl+Shift+R**
+- 但是发现 **Ctrl+F5** 效果比上面两个好
 
-- **Ctrl+Shift+Del**清除Google浏览器缓存的快捷键 
-
-- **Ctrl+Shift+R**重新加载当前网页而不使用缓存内容
