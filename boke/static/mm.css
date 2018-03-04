@@ -26,6 +26,9 @@ small {
 ul, ol {
   list-style: none;
 }
+.content-inner ul,.content-inner ol{
+  list-style: disc inside;
+}
 a {
   text-decoration: none;
 }
