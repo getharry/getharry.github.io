@@ -1,7 +1,7 @@
 class ColorGame {
   constructor(userOption) {
     this.option = {
-      time: 30, // 总时长
+      time: 90, // 总时长
       end: score => {
         document.getElementById(
           "screen"
