@@ -8,9 +8,77 @@
   <link rel="stylesheet" href="index.css">
   <title>color game</title>
 </head>
+<body style="overflow: hidden;">
+  <canvas id="canvas-club">
+    请更换支持canvas和es6的浏览器
+  </canvas>
+  <script type="text/javascript">
+    let c = document.getElementById("canvas-club");
+    let ctx = c.getContext("2d");
+    let w = c.width = window.innerWidth;
+    let h = c.height = window.innerHeight;
+    let clearColor = 'rgba(0,0,0,.1)';
+    let max = 50;
+    let drops = [];
 
-<body>
-  <div class="container">
+    let random = (min,max) => Math.random()*(max - min) + min;
+    let resize = () => {
+      w = c.width = window.innerWidth;
+      h = c.height = window.innerHeight;
+    }
+
+    class RainDrop{
+      init(){
+        this.x = random(0,w);
+        this.y = 0;
+        this.color = 'hsl(180,100%,50%)';
+        this.vy = random(4,5);
+        this.hit = random(h*.8,h*.9);
+        this.size = 2;
+      }
+      draw(){
+        if(this.y<this.hit){
+          ctx.fillStyle = this.color;
+          ctx.fillRect(this.x,this.y,this.size,this.size*5);
+        }
+        this.update();
+      }
+      update(){
+        if(this.y<this.hit){
+          this.y += this.vy;
+          // this.x += this.vy;
+        }else{
+          this.init();
+        }
+      }
+
+    }
+    // let r = new RainDrop();
+    // r.init();
+    let anim = () => {
+      ctx.fillStyle = clearColor;
+      ctx.fillRect(0,0,w,h);
+      for(let i of drops){
+        i.draw();
+      }
+      // r.draw();
+      requestAnimationFrame(anim);
+    }
+    let setup = () => {
+      for(let i =0;i < max;i ++){
+        setTimeout(()=>{
+          let o = new RainDrop();
+          o.init();
+          drops.push(o);
+        },i*200);
+      }
+    }
+    window.addEventListener('resize',resize);
+    setup();
+    anim();
+
+  </script>
+  <div class="container" style="display: none;">
     <div class="wgt-home" id="page-one">
       <h1>辨色力小游戏</h1>
       <p>找出所有色块里颜色不同的一个</p>
@@ -53,7 +121,11 @@
       new ColorGame({
         time: 500
       })
-    })
+    });
+    setTimeout(()=>{
+      document.querySelector('.container').style.display = 'block';
+      document.querySelector('canvas').style.display = 'none';
+    },5000);
   }
 </script>
 </html>
