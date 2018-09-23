@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <title>color game</title>
 </head>
 <body style="overflow: hidden;">
-  <canvas id="canvas-club">
+  <canvas id="canvas-club" class="animated zoomIn">
     请更换支持canvas和es6的浏览器
   </canvas>
   <script type="text/javascript">
@@ -79,10 +80,10 @@
 
   </script>
   <div class="container" style="display: none;">
-    <div class="wgt-home" id="page-one">
+    <div class="wgt-home animated slideInUp" id="page-one">
       <h1>辨色力小游戏</h1>
       <p>找出所有色块里颜色不同的一个</p>
-      <a id="start" class="btn btn-primary btn-lg">开始挑战</a>
+      <a id="start" class="btn btn-primary btn-lg animated swing infinite">开始挑战</a>
     </div>
     <header class="header">
       <h1>辨色力测试</h1>
