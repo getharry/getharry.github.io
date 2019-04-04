@@ -3,10 +3,13 @@
 但很多时候，难免会遇到出错的尴尬，归根揭底还是因为语言的“随意性”而导致的了解不全面。如果能够
 对类型的变换做到心中有数，那么程序出现异常的概率就会大大降低。
 ## 举几个栗子
-- 如果后端返回了字符串'null'  
-!['null'](./static/article/pic/ifnull.jpg)
 - if条件可以通过，双等却不为true  
 ![并不是true](./static/article/pic/nottrue.jpg)
+- 如果后端返回了字符串'null'  
+!['null'](./static/article/pic/ifnull.jpg)  
+如果某个对象的某个属性的值为字符串null，stringify和parse之后依旧是字符串。  
+![](./static/article/pic/selinabai.gif)  
+
 
 
 
