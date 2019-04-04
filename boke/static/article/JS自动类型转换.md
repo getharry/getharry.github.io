@@ -4,7 +4,10 @@
 对类型的变换做到心中有数，那么程序出现异常的概率就会大大降低。
 ## 举几个栗子
 - 如果后端返回了字符串'null'  
-!['null'](./pic/ifnull.jpg)
+!['null'](./static/article/pic/ifnull.jpg)
+- if条件可以通过，双等却不为true  
+![并不是true](./static/article/pic/nottrue.jpg)
+
 
 
 
