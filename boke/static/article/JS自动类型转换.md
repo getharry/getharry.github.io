@@ -9,13 +9,15 @@
 !['null'](./static/article/pic/ifnull.jpg)  
 如果某个对象的某个属性的值为字符串null，stringify和parse之后依旧是字符串。  
 ![](./static/article/pic/selinabai.gif)  
-- 所有的js类型，包括基本类型和引用类型，只有undefined和null不能使用点操作符。  
+- 所有的js类型，包括基本类型和引用类型，只有undefined和null不能使用点操作符。
+
 ```javascript
 let a = 1; // 1,'abc',[],{},true
 console.log(a.m); // undefined,不会报错
 
 // 用&&来防范undefined和null
 let b = a.m && a.m.n; // undefined
+
 ```
 - PS:chrome控制台用shift + enter换行
 
