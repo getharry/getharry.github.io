@@ -16,4 +16,6 @@ $ git config --list
 ```bash
 # 禁用fast forward，Git就会在merge时生成一个新的commit
 $ git merge --no-ff -m "merge with no-ff" dev
+# 在xlh分支直接拉取dev分支的最新内容
+$ git pull origin dev
 ```
