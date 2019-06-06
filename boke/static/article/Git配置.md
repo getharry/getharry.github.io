@@ -19,3 +19,8 @@ $ git merge --no-ff -m "merge with no-ff" dev
 # 在xlh分支直接拉取dev分支的最新内容
 $ git pull origin dev
 ```
+
+### 修改远程仓库地址
+```bash
+$ git remote set-url origin https://gitee.com/jouypub/json.git
+```
