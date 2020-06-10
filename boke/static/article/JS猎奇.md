@@ -1,4 +1,5 @@
 # JS猎奇
+
 ```javascript
 
 // 将arguments转换为常规数组
